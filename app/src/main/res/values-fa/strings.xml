@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="enter_your_name">نام خود را واردکنید...</string>
+
+    <string name="enter_your_family">نام خانوادگی خود را وارد کنید</string>
+
+    <string name="enter_your_age">سن خود را وارد کنید</string>
+
+    <string name="enter">تایید</string>
+
+    <string name="enter_your_phone_number">شماره تلفن خود را وارد کنید</string>
+
+    <string name="enter_email_address">ایمیل خود را وارد کنید...</string>
+
+    <string name="name">نام:</string>
+
+    <string name="family">نام خانوادگی:</string>
+
+    <string name="age">سن:</string>
+
+    <string name="email">ادرس:</string>
+
+    <string name="no">خیر</string>
+
+    <string name="yes">بله</string>
+
+    <string name="phonenumber">شماره موبایل:</string>
+
+
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+
+
+    <string name="app_name">My Application</string>
+    <string name="enter_your_name">Enter your name...</string>
+    <string name="enter_your_family">Enter your family...</string>
+    <string name="enter_your_age">Enter your age...</string>
+    <string name="enter">Enter</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+
+
+    <string name="enter_email_address">Enter email address...</string>
+    <string name="name">Name:</string>
+    <string name="family">Family</string>
+    <string name="age">Age:</string>
+    <string name="email">Email:</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="phonenumber">PhoneNumber:</string>
+
+
+</resources>
