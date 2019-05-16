@@ -2,96 +2,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ff292829"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <EditText
-
-        android:id="@+id/txt-Enter-Name"
+        android:id="@+id/edt_Enter_Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
-        android:background="@drawable/shape"
+        android:layout_marginRight="10dp"
         android:hint="@string/enter_your_name"
         android:inputType="textFilter"
-        android:nextFocusDown="@id/txt-family"
-        android:singleLine="true"
-        android:textColorHint="@color/white"
-        android:textSize="37sp"
+        android:textSize="25sp"
         android:textStyle="italic"
         android:typeface="serif" />
 
-
     <EditText
-        android:id="@+id/txt-family"
+        android:id="@+id/edt_Enter_Family"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
-        android:background="@drawable/shape"
+        android:layout_marginRight="10dp"
         android:hint="@string/enter_your_family"
         android:inputType="text"
-        android:nextFocusDown="@id/txt-Age"
-        android:singleLine="true"
-        android:textColorHint="@color/white"
-        android:textSize="36dp"
+        android:textSize="25sp"
         android:textStyle="italic"
         android:typeface="serif" />
 
-
     <EditText
-        android:id="@+id/txt-Age"
+        android:id="@+id/edt_Age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
-        android:background="@drawable/shape"
+        android:layout_marginRight="10dp"
         android:hint="@string/enter_your_age"
         android:inputType="number"
         android:maxLength="3"
-        android:nextFocusDown="@id/txt-Enter-Email-Address"
-        android:singleLine="true"
-        android:textColorHint="#F0FFFF"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:textStyle="italic"
         android:typeface="serif" />
 
     <EditText
-        android:id="@+id/txt-Enter-Email-Address"
-        android:layout_width="wrap_content"
+        android:id="@+id/edt_Enter_Email_Address"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
-        android:background="@drawable/shape"
+        android:layout_marginRight="10dp"
         android:hint="@string/enter_email_address"
         android:inputType="textEmailAddress"
-        android:nextFocusDown="@id/txt-PhoneNumber"
-        android:singleLine="true"
-        android:textColorHint="#f0ffff"
-        android:textSize="35dp"
+        android:textSize="25sp"
         android:textStyle="italic"
         android:typeface="serif" />
 
-
     <EditText
-
-        android:id="@+id/txt-PhoneNumber"
-        android:layout_width="wrap_content"
+        android:id="@+id/edt_PhoneNumber"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
         android:hint="@string/enter_your_phone_number"
         android:inputType="phone"
         android:maxLength="11"
-        android:textColorHint="@color/white" />
-
+        android:textSize="25sp" />
 
     <Button
-        android:id="@+id/btn-ENTER"
-        android:layout_width="wrap_content"
+        android:id="@+id/btn_ENTER"
+        android:layout_width="158dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="75dp"
@@ -99,7 +86,6 @@
         android:text="@string/enter"
         android:textStyle="bold"
         android:typeface="serif" />
-
 
 </LinearLayout>
 

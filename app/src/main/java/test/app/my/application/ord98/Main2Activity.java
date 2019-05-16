@@ -42,6 +42,14 @@ public class Main2Activity extends AppCompatActivity {
                 PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).edit().putString("email", tvEmail.getText().toString()).apply();
                 PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).edit().putString("phone", tvPhone.getText().toString()).apply();
 
+
+                PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).getString("name", " Name");
+                PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).getString("family", " Family");
+                PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).getString("age", " Age");
+                PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).getString("email", " Email");
+                PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).getString("phone", " Phone");
+
+
                 Intent intentOK = new Intent();
                 setResult(RESULT_OK, intentOK);
                 finish();

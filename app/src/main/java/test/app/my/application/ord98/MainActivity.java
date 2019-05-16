@@ -20,26 +20,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final EditText txtEnterName = findViewById(R.id.txt_Enter_Name);
-        final EditText txtFamily = findViewById(R.id.txt_family);
-        final EditText txtAge = findViewById(R.id.txt_Age);
-        final EditText txtEmail = findViewById(R.id.txt_Enter_Email_Address);
-        final EditText txtPhoneNumber = findViewById(R.id.txt_PhoneNumber);
+
+        final EditText EnterName = findViewById(R.id.edt_Enter_Name);
+        final EditText EnterFamily = findViewById(R.id.edt_Enter_Family);
+        final EditText EnterAge = findViewById(R.id.edt_Age);
+        final EditText EnterEmail = findViewById(R.id.edt_Enter_Email_Address);
+        final EditText EnterPhoneNumber = findViewById(R.id.edt_PhoneNumber);
         Button btnENTER = findViewById(R.id.btn_ENTER);
 
-        txtEnterName.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("name", ""));
-        txtFamily.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("family", ""));
-        txtAge.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("age", ""));
-        txtPhoneNumber.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("PhoneNumber", ""));
-        txtEmail.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("email", ""));
+        EnterName.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("name", ""));
+        EnterFamily.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("family", ""));
+        EnterAge.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("age", ""));
+        EnterEmail.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("email", ""));
+        EnterPhoneNumber.setText(PreferenceManager.getDefaultSharedPreferences(MainActivity.this).getString("phone", ""));
         btnENTER.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View v) {
-                                            String name = txtEnterName.getText().toString();
-                                            String family = txtFamily.getText().toString();
-                                            String age = txtAge.getText().toString();
-                                            String email = txtEmail.getText().toString();
-                                            String PhoneNumber = txtPhoneNumber.getText().toString();
+                                            String name = EnterName.getText().toString();
+                                            String family = EnterFamily.getText().toString();
+                                            String age = EnterAge.getText().toString();
+                                            String email = EnterEmail.getText().toString();
+                                            String PhoneNumber = EnterPhoneNumber.getText().toString();
 
 
                                             if (name.length() <= 3) {
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
                                             } else if (Integer.parseInt(age) < 0 && Integer.parseInt(age) > 999) {
                                                 Toast.makeText(MainActivity.this, "سن را درست وارد کنید", Toast.LENGTH_LONG).show();
 
-                                            } else if (!email.matches(email) && txtEmail.length() <= 0) {
+                                            } else if (email.length() <= 0 && !email.matches(email)) {
                                                 Toast.makeText(MainActivity.this, "ايميل را درست وارد کنید", Toast.LENGTH_LONG).show();
 
                                             } else if (PhoneNumber.length() >= 12) {

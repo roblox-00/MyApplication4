@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kebob_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".testDrawer">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btn_Save-Data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:text="@string/save_data" />
+
+
+        <Button
+            android:id="@+id/btn_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape3"
+            android:text="@string/list_view" />
+
+
+        <TextView
+
+            android:id="@+id/txt_instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Instagram"
+            android:textColor="@color/darkGrey" />
+    </LinearLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
