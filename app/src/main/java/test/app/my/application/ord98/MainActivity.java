@@ -42,21 +42,25 @@ public class MainActivity extends AppCompatActivity {
                                             String email = EnterEmail.getText().toString();
                                             String PhoneNumber = EnterPhoneNumber.getText().toString();
 
+                                            try {
+                                                if (name.length() <= 3) {
+                                                    Toast.makeText(MainActivity.this, "نام را درست وارد کنید", Toast.LENGTH_LONG).show();
 
-                                            if (name.length() <= 3) {
-                                                Toast.makeText(MainActivity.this, "نام را درست وارد کنید", Toast.LENGTH_LONG).show();
+                                                } else if (family.length() <= 3) {
+                                                    Toast.makeText(MainActivity.this, "نام خانوادگی را درست وارد کنید", Toast.LENGTH_LONG).show();
 
-                                            } else if (family.length() <= 3) {
-                                                Toast.makeText(MainActivity.this, "نام خانوادگی را درست وارد کنید", Toast.LENGTH_LONG).show();
-                                            } else if (Integer.parseInt(age) < 0 && Integer.parseInt(age) > 999) {
-                                                Toast.makeText(MainActivity.this, "سن را درست وارد کنید", Toast.LENGTH_LONG).show();
+                                                } else if (Integer.parseInt(age) < 0 && Integer.parseInt(age) > 999) {
+                                                    Toast.makeText(MainActivity.this, "سن را درست وارد کنید", Toast.LENGTH_LONG).show();
 
-                                            } else if (email.length() <= 0 && !email.matches(email)) {
-                                                Toast.makeText(MainActivity.this, "ايميل را درست وارد کنید", Toast.LENGTH_LONG).show();
+                                                } else if (email.length() <= 0 && !email.matches(email)) {
+                                                    Toast.makeText(MainActivity.this, "ايميل را درست وارد کنید", Toast.LENGTH_LONG).show();
 
-                                            } else if (PhoneNumber.length() >= 12) {
-                                                Toast.makeText(MainActivity.this, "شماره موبایل را درست وارد کنید", Toast.LENGTH_LONG).show();
-                                            } else {
+                                                } else if (PhoneNumber.length() >= 12) {
+                                                    Toast.makeText(MainActivity.this, "شماره موبایل را درست وارد کنید", Toast.LENGTH_LONG).show();
+                                                }
+                                            } catch (Exception e) {
+                                                Toast.makeText(MainActivity.this, "فید ها را کامل کنید", Toast.LENGTH_SHORT).show();
+
 
                                                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                                                 intent.putExtra("name", name);

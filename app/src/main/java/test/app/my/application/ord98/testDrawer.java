@@ -16,6 +16,17 @@ public class testDrawer extends AppCompatActivity {
         setContentView(R.layout.activity_test_drawer);
 
 
+        TextView txtOghat = findViewById(R.id.txt_Oghat);
+        txtOghat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(testDrawer.this, OghatSharei.class);
+                startActivity(intent);
+            }
+        });
+
+
         TextView txtinstagram = findViewById(R.id.txt_instagram);
         txtinstagram.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,8 +37,8 @@ public class testDrawer extends AppCompatActivity {
         });
 
 
-        Button btnlistView = findViewById(R.id.btn_listview);
-        btnlistView.setOnClickListener(new View.OnClickListener() {
+        TextView txtlistView = findViewById(R.id.txt_listview);
+        txtlistView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(testDrawer.this, testRecycler.class);

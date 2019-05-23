@@ -17,6 +17,14 @@
     <string name="toch_to_open_the_insta_page">باز کردن صفحه اینستاگرام</string>
     <string name="save_data">ثبت اطلاعات</string>
     <string name="list_view">نمایش لیست</string>
+    <string name="oghatsharei">OghatSharei</string>
+    <string name="Namayesh_Oghat_sharei">نمایش اوقات شرعی</string>
+    <string name="_Fajr">فجر :</string>
+    <string name="_Tolo">طلوع :</string>
+    <string name="_Zohr">ظهر :</string>
+    <string name="_Asr">عصر :</string>
+    <string name="_Maghrib">مغرب :</string>
+    <string name="_Isha">اعشاء :</string>
 
 
 </resources>

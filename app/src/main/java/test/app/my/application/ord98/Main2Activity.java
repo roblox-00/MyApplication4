@@ -33,7 +33,6 @@ public class Main2Activity extends AppCompatActivity {
         tvEmail.setText(intent.getStringExtra("email"));
         tvPhone.setText(intent.getStringExtra("phone"));
         btnYes.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 PreferenceManager.getDefaultSharedPreferences(Main2Activity.this).edit().putString("name", tvName.getText().toString()).apply();
